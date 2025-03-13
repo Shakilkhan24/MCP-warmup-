@@ -25,10 +25,10 @@ def train_model(config: ModelConfig) -> str:
         mlflow.xgboost.log_model(model, "model")
         return f"Model trained with accuracy: {accuracy:.4f}"
 
-x = train_model(ModelConfig(
-    max_depth=2,
-    learning_rate=0.20218480200547248,
-    objective="binary:logistic",
-    n_estimators=188
-))
-print(x) 
+# x = train_model(ModelConfig(
+#     max_depth=2,
+#     learning_rate=0.20218480200547248,
+#     objective="binary:logistic",
+#     n_estimators=188
+# ))
+# print(x) 
